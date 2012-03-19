@@ -1,4 +1,4 @@
-@include 'variables';
+@include '960/variables';
 
 @mixin text($font-family: $ninesixty-font-family, $font-size: $ninesixty-font-size) {
   body {

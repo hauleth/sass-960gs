@@ -1,5 +1,5 @@
 960 Grid System - Standalone
-================================
+============================
 
 960.gs is created by Nathan Smith. See the official site for more info: <http://960.gs/>
 
@@ -10,12 +10,21 @@ Install
 
     gem install sass-960
 
-Adding the 960 plugin to an existing project
-============================================
+Adding the 960 to an existing project
+=====================================
 
 Then make sure you have imported the grid library into your core .sass or .scss file with:
 
-    @import '960/grid';
+    @import '960';
+
+Adding the 960.gs to your Rails 3 assets pipeline
+=================================================
+
+In your `application.css` add
+
+     *= require 960
+
+And be happy with your 960.gs layout.
 
 Customizing your Grid System
 ============================

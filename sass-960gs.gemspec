@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{compass-960-plugin}
-  s.version = "0.10.4"
+  s.name = %q{sass-960gs}
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ["Chris Eppstein", "Matt Sanders", "Łukasz Niemier"]
