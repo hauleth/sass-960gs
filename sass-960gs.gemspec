@@ -13,11 +13,12 @@ Gem::Specification.new do |s|
   s.files = %w{
     README.md
     sass-960gs.gemspec
-    stylesheets/960/_grid.scss
-    stylesheets/960/_fixed_grid.scss
-    stylesheets/960/_fluid_grid.scss
-    stylesheets/960/_text.scss
-    stylesheets/960/_variables.scss
+    app/assets/stylesheets/_960.scss
+    app/assets/stylesheets/960/_grid.scss
+    app/assets/stylesheets/960/_fixed_grid.scss
+    app/assets/stylesheets/960/_fluid_grid.scss
+    app/assets/stylesheets/960/_text.scss
+    app/assets/stylesheets/960/_variables.scss
   }
   s.homepage = %q{https://github.com/Hauleth/sass-960gs}
   s.rubygems_version = %q{1.3.6}
