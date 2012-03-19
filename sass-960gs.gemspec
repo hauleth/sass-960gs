@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
     README.md
     sass-960gs.gemspec
     app/assets/stylesheets/_960.scss
-    app/assets/stylesheets/960/_grid.scss
     app/assets/stylesheets/960/_fixed_grid.scss
     app/assets/stylesheets/960/_fluid_grid.scss
     app/assets/stylesheets/960/_text.scss
