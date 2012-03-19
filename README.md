@@ -3,7 +3,7 @@
 
 960.gs is created by Nathan Smith. See the official site for more info: <http://960.gs/>
 
-* This plugin is consistent with latest version of 960.gs as of 3/14/2011
+> This plugin is consistent with latest version of 960.gs as of 3/19/2012
 
 Install
 =======
@@ -15,7 +15,7 @@ Adding the 960 plugin to an existing project
 
 Then make sure you have imported the grid library into your core .sass or .scss file with:
 
-    @import 960/grid
+    @import '960/grid';
 
 Customizing your Grid System
 ============================
@@ -46,7 +46,7 @@ can also customize the number of columns as demonstrated:
 
 Example:
 
-    @include grid-system-complete(24)
+    @include grid-system-complete(24);
 
 If you want to scope the grid inside a specific set of selectors or control your container class' name you can use the `+grid-system` mixin instead.
 
