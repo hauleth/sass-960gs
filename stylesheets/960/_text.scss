@@ -1,8 +1,8 @@
 @include 'variables';
 
-@mixin text($font-family: $ninesixty-font-family) {
+@mixin text($font-family: $ninesixty-font-family, $font-size: $ninesixty-font-size) {
   body {
-    font: unquote("13px/1.5") $font-family; }
+    font: $font-size $font-family; }
   a:focus {
     outline: 1px dotted invert; }
   hr {
@@ -12,17 +12,17 @@
     clear: both;
     height: 0; }
   h1 {
-    font-size: 25px; }
+    font-size: 1.667px; }
   h2 {
-    font-size: 23px; }
+    font-size: 1.533px; }
   h3 {
-    font-size: 21px; }
+    font-size: 1.4em; }
   h4 {
-    font-size: 19px; }
+    font-size: 1.267em; }
   h5 {
-    font-size: 17px; }
+    font-size: 1.133em; }
   h6 {
-    font-size: 15px; }
+    font-size: 1em; }
   ol {
     list-style: decimal; }
   ul {
