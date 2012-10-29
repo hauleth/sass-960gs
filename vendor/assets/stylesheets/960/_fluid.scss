@@ -7,7 +7,8 @@
   min-width: $ninesixty-fluid-grid-min-width;
 }
 
-@mixin fluid-grid-width($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-fluid-gutter-width) {
+@mixin fluid-grid-width($n, $cols: $ninesixty-columns,
+                        $gutter-width: $ninesixty-fluid-gutter-width) {
   width: 100% / $cols * $n - $gutter-width;
 }
 
@@ -20,7 +21,8 @@
   };
 }
 
-@mixin fluid-grid($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-fluid-gutter-width) {
+@mixin fluid-grid($n, $cols: $ninesixty-columns,
+                  $gutter-width: $ninesixty-fluid-gutter-width) {
   @include fluid-grid-unit-base($gutter-width);
   @include fluid-grid-width($n, $cols, $gutter-width);
 }
@@ -33,8 +35,10 @@
   margin-right: 0;
 }
 
-@mixin fluid-grids($cols: $ninesixty-columns, $gutter-width: $ninesixty-fluid-gutter-width) {
-  #{enumerate(".fluid" + $ninesixty-class-separator + "grid", 1, $cols, $ninesixty-class-separator)} {
+@mixin fluid-grids($cols: $ninesixty-columns,
+                   $gutter-width: $ninesixty-fluid-gutter-width) {
+  #{enumerate(".fluid" + $ninesixty-class-separator + "grid", 1,
+              $cols, $ninesixty-class-separator)} {
     @include fluid-grid-unit-base($gutter-width);
   }
   @for $n from 1 through $cols {

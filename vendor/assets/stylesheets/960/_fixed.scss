@@ -6,7 +6,8 @@
   width: $ninesixty-grid-width;
 }
 
-@mixin grid-width($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width) {
+@mixin grid-width($n, $cols: $ninesixty-columns,
+                  $gutter-width: $ninesixty-gutter-width) {
   width: $ninesixty-grid-width / $cols * $n - $gutter-width;
 }
 
@@ -19,7 +20,8 @@
   };
 }
 
-@mixin grid($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width) {
+@mixin grid($n, $cols: $ninesixty-columns,
+            $gutter-width: $ninesixty-gutter-width) {
   @include grid-unit-base($gutter-width);
   @include grid-width($n, $cols, $gutter-width);
 }
@@ -32,7 +34,8 @@
   margin-right: 0;
 }
 
-@mixin grids($cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width) {
+@mixin grids($cols: $ninesixty-columns,
+             $gutter-width: $ninesixty-gutter-width) {
   #{enumerate(".grid", 1, $cols, $ninesixty-class-separator)} {
     @include grid-unit-base($gutter-width);
   }

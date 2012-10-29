@@ -1,6 +1,7 @@
 @import 'variables';
 
-@mixin text($font-family: $ninesixty-font-family, $font-size: $ninesixty-font-size) {
+@mixin text($font-family: $ninesixty-font-family,
+            $font-size: $ninesixty-font-size) {
   body {
     font: $font-size $font-family; }
   a:focus {
