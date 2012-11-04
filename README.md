@@ -50,22 +50,26 @@ Class-Based Grid System
 =======================
 
 To create a grid system that works like the original 960 Grid System framework
-use the `@include grid-system-complete` mixin to generate the corresponding classes. You
-can also customize the number of columns as demonstrated:
+use the `@include grid-system-complete` mixin to generate the corresponding
+classes. Youccan also customize the number of columns as demonstrated:
 
 Example:
 
     @include grid-system-complete(24);
 
-If you want to scope the grid inside a specific set of selectors or control your container class' name you can use the `+grid-system` mixin instead.
+If you want to scope the grid inside a specific set of selectors or control
+your container class' name you can use the `+grid-system` mixin instead.
 
 Example:
 
     #wrap {
       .my_container {
-        @include grid-system(16); } }
+        @include grid-system(16);
+      }
+    }
 
-This will render all of the grid system nested below your selector, replacing the normal function of the container class (would be .container_16 in this example).
+This will render all of the grid system nested below your selector, replacing 
+the normal function of the container class (would be .container_16 in this example).
 
 Making Semantic Grids
 =====================
@@ -73,12 +77,17 @@ Making Semantic Grids
 To create a grid system using only CSS, use the following semantic grid mixins:
 
 * Use the `@include grid-container` mixin to declare your container element.
-* Use the `@include grid(N, columns, gutter-width)` mixin to declare a grid element.
-* Use the `@include alpha` and `@include omega` mixins to declare the first and last grid elements for a row.
-* Use the `@include grid-prefix(N, columns)` and `@include grid-suffix(N, columns)` mixins to add empty grid columns before or after a grid element.
-* Use the `@include grid-push(N, columns)` and `@include grid-pull(N, columns)` mixins to move a grid element from its default position.
+* Use the `@include grid(N, columns, gutter-width)` mixin to declare a grid
+  element.
+* Use the `@include alpha` and `@include omega` mixins to declare the first
+  and last grid elements for a row.
+* Use the `@include grid-prefix(N, columns)` and `@include grid-suffix(N, columns)`
+  mixins to add empty grid columns before or after a grid element.
+* Use the `@include grid-push(N, columns)` and `@include grid-pull(N, columns)`
+  mixins to move a grid element from its default position.
 
-`N` is the number of grid columns to span as in `grid_N` or `push_N` with the original 960 Grid System framework.
+`N` is the number of grid columns to span as in `grid_N` or `push_N` with
+the original 960 Grid System framework.
 
 Example:
 
@@ -87,20 +96,25 @@ Example:
     #wrap {
       @include grid-container
       #header {
-        @include grid(16); }
+        @include grid(16);
+      }
       #middle {
         @include grid(16);
         #left-nav {
           @include grid(5);
-          @include alpha; }
+          @include alpha;
+        }
         #main-content {
           @include grid-prefix(1);
           @include grid(10);
-          @include omega; } } }
+          @include omega;
+        }
+      }
+    }
 
 Authors/Contributors
 ====================
 
-[Chris Eppstein](http://chriseppstein.github.com/) is the creator of Compass, a core contributor to Sass and the father of this plugin.
-
-[Nathan Smith](http://sonspring.com/) is the author of [960.gs](http://960.gs/), the grid system this plugin is based on. He's also kind enough to let us pester him with questions from time to time.
+[Nathan Smith](http://sonspring.com/) is the author of [960.gs](http://960.gs/),
+the grid system this plugin is based on. He's also kind enough to let us pester
+him with questions from time to time.
