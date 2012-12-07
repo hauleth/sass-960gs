@@ -8,7 +8,7 @@
 Install
 =======
 
-    gem install sass-960
+    gem install sass-960gs
 
 Adding the 960 to an existing project
 =====================================
@@ -51,7 +51,7 @@ Class-Based Grid System
 
 To create a grid system that works like the original 960 Grid System framework
 use the `@include grid-system-complete` mixin to generate the corresponding
-classes. Youccan also customize the number of columns as demonstrated:
+classes. You can also customize the number of columns as demonstrated:
 
 Example:
 
