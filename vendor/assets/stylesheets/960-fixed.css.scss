@@ -1,5 +1,7 @@
 @import '960/fixed';
 @import '960/text';
 
-@include grid-system-complete;
-@include text;
+.grid.fixed {
+  @include grid-system-complete;
+  @include text;
+}

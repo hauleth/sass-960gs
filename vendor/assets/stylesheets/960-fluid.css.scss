@@ -1,5 +1,7 @@
 @import '960/fluid';
 @import '960/text';
 
-@include fluid-grid-system-complete;
-@include text;
+.grid.fluid {
+  @include fluid-grid-system-complete;
+  @include text;
+}

@@ -17,6 +17,8 @@ Then make sure you have imported the grid library into your core .sass or .scss 
 
     @import '960';
 
+If you use so (even when using assets pipeline) you will have full control about your grid.
+
 Adding the 960.gs to your Rails 3 assets pipeline
 =================================================
 
@@ -24,7 +26,16 @@ In your `application.css` add
 
      *= require 960
 
-And be happy with your 960.gs layout.
+It will give you access to fully operational `.grid.fixed` and `.grid.fluid` layout without
+any modifications except adding chosen class to your `body`.
+
+You can always choose only one of the grids using
+
+    *= require 960-fluid
+
+or
+
+    *= require 960-fixed
 
 Customizing your Grid System
 ============================

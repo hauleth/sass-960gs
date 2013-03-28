@@ -3,11 +3,11 @@
 .grid {
   @include text;
 
-  .fixed {
+  &.fixed {
     @include grid-system-complete;
   }
 
-  .fluid {
+  &.fluid {
     @include fluid-grid-system-complete;
   }
 }
