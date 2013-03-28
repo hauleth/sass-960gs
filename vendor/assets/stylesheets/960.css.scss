@@ -1,0 +1,13 @@
+@import '960';
+
+.grid {
+  @include text;
+
+  .fixed {
+    @include grid-system-complete;
+  }
+
+  .fluid {
+    @include fluid-grid-system-complete;
+  }
+}
