@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sass-960gs}
-  s.version = '1.0.0'
+  s.version = '1.0.1'
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5")
   s.authors = ['Łukasz Niemier']
