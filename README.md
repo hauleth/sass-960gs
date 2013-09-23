@@ -102,10 +102,10 @@ the original 960 Grid System framework.
 
 Example:
 
-    $ninesixty-columns: 16
+    $ninesixty-columns: 16;
 
     #wrap {
-      @include grid-container
+      @include grid-container;
       #header {
         @include grid(16);
       }
