@@ -129,3 +129,7 @@ Authors/Contributors
 [Nathan Smith](http://sonspring.com/) is the author of [960.gs](http://960.gs/),
 the grid system this plugin is based on. He's also kind enough to let us pester
 him with questions from time to time.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hauleth/sass-960gs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
